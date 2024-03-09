@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        app:srcCompat="@drawable/blueback" />
+
+    <ImageView
+        android:id="@+id/backgroundMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="255dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/gallery"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/infoRegister"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/infoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firstName"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="Registration Form"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/infoRegister"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/firstName"
+        app:layout_constraintBottom_toTopOf="@+id/dateBirth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <EditText
+        android:id="@+id/dateBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        app:layout_constraintBottom_toTopOf="@+id/years"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of Birth"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <EditText
+        android:id="@+id/years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dateBirth"
+        app:layout_constraintBottom_toTopOf="@+id/emailRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/emailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/years"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRegister"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueDark"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister"
+        app:layout_constraintBottom_toTopOf="@id/registerNow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Register"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
+        android:id="@+id/registerNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login now"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Art"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Recipes">
+
+        <ImageView
+            android:id="@+id/backgroundMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bluecloudback" />
+
+        <LinearLayout
+            android:id="@+id/layoutProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/proteinFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Famous Paintings"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="?android:attr/listDivider"
+            android:layout_below="@+id/layoutProtein"
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutLowCalorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/divider4">
+            <TextView
+                android:id="@+id/lowCalorieFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Famous Sculptures"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listLowCalorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                />
+            <include
+                android:id="@+id/bottomNav"
+                layout="@layout/activity_home" />
+
+            <Button
+                android:id="@+id/buttonAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@color/blueDark"
+                android:text="Notify me!"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteX="297dp"
+                tools:layout_editor_absoluteY="256dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

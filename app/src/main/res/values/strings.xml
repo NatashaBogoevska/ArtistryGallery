@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">ArtistryGallery</string>
+
+    <integer-array name="images">
+        <item>@drawable/starrynight</item>
+        <item>@drawable/monalisa</item>
+        <item>@drawable/girlpearl</item>
+        <item>@drawable/thekiss</item>
+    </integer-array>
+
+    <string-array name="titles">
+        <item>Starry Night</item>
+        <item>Mona Lisa</item>
+        <item>Girl With A Pearl Earring</item>
+        <item>The Kiss</item>
+    </string-array>
+
+    <string-array name="artist">
+        <item>Vincent van Gogh</item>
+        <item>Leonardo da Vinci</item>
+        <item>Johannes Vermeer</item>
+        <item>Gustav Klimt</item>
+    </string-array>
+
+    <integer-array name="year">
+        <item>1889</item>
+        <item>1503</item>
+        <item>1665</item>
+        <item>1908</item>
+    </integer-array>
+
+    <integer-array name="imagesc">
+        <item>@drawable/david</item>
+        <item>@drawable/venusdemilo</item>
+        <item>@drawable/wingedvictory</item>
+        <item>@drawable/lacoonandhissons</item>
+    </integer-array>
+
+    <string-array name="titlesc">
+        <item>David</item>
+        <item>Venus De Milo</item>
+        <item>Winged Victory Of Samothrace</item>
+        <item>Laocoön And His Sons</item>
+    </string-array>
+
+    <string-array name="artistc">
+        <item>Michelangelo</item>
+        <item>Alexandros of Antioch</item>
+        <item>Unknown</item>
+        <item>Agesander, Polydorus, and Athenadoros</item>
+    </string-array>
+
+    <integer-array name="yearc">
+        <item>1501</item>
+        <item>1820</item>
+        <item>1863</item>
+        <item>1506</item>
+    </integer-array>
+
+    <string name="instructions">Enter a painting or sculpture name to find out who made it. </string>
+    <string name="button_text">Search</string>
+    <string name="input_hint">Title</string>
+
+    <!-- User messages for in-process queries and error results. -->
+    <string name="loading">Loading…</string>
+    <string name="no_results">"No Results Found"</string>
+    <string name="no_search_term">Please enter a search term</string>
+    <string name="no_network">Please check your network connection and try again.</string>
+
+
+</resources>
